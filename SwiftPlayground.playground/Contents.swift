@@ -2,7 +2,7 @@
 
 import UIKit
 
-// MARK: - Codable
+// MARK: - Codable 😃
 
 public struct Member: Codable {
     fileprivate var _name: String
@@ -96,7 +96,31 @@ print("Combined: \(event[keyPath: combinedKeyPath])")
 
 // More to come for KVC...
 
-// MARK: - 
+// MARK: - One Sided Ranges
+
+let hotpotResteraunts = ["Little Sheep Hotpot", "Hotpot Garden", "The Flame", "Lollipot"]
+hotpotResteraunts[..<2]
+hotpotResteraunts[2...]
+
+// MARK: - Dictionary Updates
+
+let distances = [
+    "A" : 120, "B" : 18.0, "C" : 20.0,
+    "D" : 30, "E" : 50.0, "F" : 21.0
+]
+
+let withinTenMiles = distances.filter { $0.value < 20.0 }
+print(withinTenMiles) // Now returns back a dictionary
+
+
+// MARK: - Strings are back to collections!
+
+let quote = "Yayyyy 😁"
+
+
+
+
+
 
 
 
